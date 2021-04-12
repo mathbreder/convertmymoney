@@ -1,0 +1,7 @@
+<%- include ('header') %> 
+<form action="/cotacao" method="GET">
+    <input type="text" name="cotacao" <%- cotacao ? 'value="' + cotacao + '"' : '' %> placeholder="Cotação do dólar"><br>
+    <input type="text" name="quantidade" placeholder="Quantidade de dólares"><br>
+    <button>Converter!</button>
+</form>
+<%- include ('footer') %> 
